@@ -25,7 +25,6 @@ class Song
     artist_name = Artist.find_or_create_by_name(artist_name)
     artist_name.add_song(song)
 
-    song
   end
 
 
