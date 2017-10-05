@@ -21,7 +21,6 @@ class Song
     genre = file[2].delete(".mp3")
 
     song = self.new(song_name)
-    song.name = song_name
     song.artist_name = artist_name
     artist_name = Artist.find_or_create_by_name(artist_name)
     artist_name.add_song(dong)
